@@ -1,0 +1,13 @@
+.Weather_Item{
+    height: 200px;
+    color: white;
+    .Weather_Item_Main{
+        color: white;
+        .Weather_Item_Main_AboutWeather{
+            color: white;
+            .Temp{
+                color: white;
+            }
+        }
+    }
+}

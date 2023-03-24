@@ -1,0 +1,60 @@
+.Weather_Main{
+    height: 85%;
+    input{
+        background-color: #1F202B;
+        width:65%;
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+        border-radius: 40px;
+        outline: none;
+        border: 0px;
+    }
+    .Blur{
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(6px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Weather_Main_Input{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://img2.goodfon.ru/original/1920x1200/a/1c/london-city-river-shard.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 100%;
+        height: 70%;
+       button{
+        position: absolute;
+        padding: 20px;
+        right: 16.6%;
+        width: 150px;
+        border-radius: 40px;
+        font-weight:700;
+        background-color: #1A9BD6;
+        border: 0px;
+        color: white;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            background-color: #147fb1;
+            cursor: pointer;
+        }
+       }
+    }
+    .Weather_Main_ShowWeather{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 30%;
+        background-color: #1F202B;
+       }
+       .WeatherFor{
+        color: white;
+       }
+}

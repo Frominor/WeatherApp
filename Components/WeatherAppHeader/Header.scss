@@ -1,0 +1,25 @@
+.Header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    color: white;
+    background: #1F202B;
+    .Header_Left_Side{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        .WeatherLogo{
+            margin-left: 170px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .Title{
+            margin-left: 10px;
+        }
+    }
+    .Header_Right_Side{
+        width: 20%;
+    }
+}
