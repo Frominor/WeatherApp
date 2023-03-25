@@ -1,13 +1,57 @@
 .Weather_Item{
-    height: 200px;
     color: white;
-    .Weather_Item_Main{
-        color: white;
-        .Weather_Item_Main_AboutWeather{
-            color: white;
-            .Temp{
-                color: white;
-            }
-        }
+    min-width: 240px;
+    transition: .1s ease-in-out;
+ &_Header{
+    text-align: center;
+    padding: 5px;
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ &_Header{
+    border-radius: 10px 10px 0px 0px;
+ }
+ &_Main{
+min-width: 240px;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+&_AboutWeather{
+    font-size: 25px;
+    color: lightgray;
+    img{
+        margin-top: 20px;
+        margin-left:85px ;
+        width: 35px;
     }
+    h4{
+        text-align: center;
+    }
+ }  
+ &_title{   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 45px;
+img{
+    width: 70px;
+} 
+} 
+ }
+ 
+ .Header_Black{
+background-color:#222532;;
+ }
+ .Main_Black{
+background-color: #252935;
+ }
+ .Main_White{
+    background-color: #323544;
+ }
+ .Header_White{
+    background-color: #2C303C;
+ }
 }

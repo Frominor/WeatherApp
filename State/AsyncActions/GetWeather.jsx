@@ -4,6 +4,7 @@ return async (dispatch)=>{
     let data=await res.json()
       console.log(String(new Date()).split(':'))
       console.log(data)
-    dispatch({type:'ADD_WEATHER',payload:data.list})
+      
+    dispatch({type:'ADD_WEATHER',payload:data})
 }
 }

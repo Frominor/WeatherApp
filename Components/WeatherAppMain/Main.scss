@@ -1,4 +1,6 @@
 .Weather_Main{
+    position: relative;
+    background: #1F202B;
     height: 85%;
     input{
         background-color: #1F202B;
@@ -19,7 +21,7 @@
         justify-content: center;
         align-items: center;
     }
-    .Weather_Main_Input{
+    &_Input{
         position: relative;
         display: flex;
         align-items: center;
@@ -47,14 +49,20 @@
         }
        }
     }
-    .Weather_Main_ShowWeather{
+    &_ShowWeather{
+      
+        position: absolute;
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        height: 30%;
-        background-color: #1F202B;
-       }
+        justify-content: space-evenly;
+        overflow: hidden;
+        bottom: 20%;
+        height: 35%;
        .WeatherFor{
         color: white;
+       }
+       }
+       .WeatherFor{
+        text-align: center;
        }
 }
