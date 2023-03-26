@@ -55,7 +55,7 @@
     display: flex;
 
     overflow: hidden;
-    bottom: 20%;
+    bottom: 15%;
     height: 35%;
     .WeatherFor {
       color: white;
@@ -87,5 +87,14 @@
         cursor: pointer;
       }
     }
+  }
+  .WeatherInCity{
+    position: absolute;
+    z-index: 30;
+    left: 41.5%;
+    bottom: 53%;
+    color: white;
+    font-size: 30px;
+
   }
 }

@@ -7,6 +7,7 @@ import { GetWeather } from "../../State/AsyncActions/GetWeather";
 import WeatherItem from "../../ReUseComponents/WeatherItem/WeatherItem";
 export default function Main() {
   const State = useSelector((state) => state.WeatherReducer);
+  const [Value, SetValue] = React.useState("");
   const Slider = useRef(null);
   const ref = useRef("");
   const dispatch = useDispatch();
@@ -17,10 +18,11 @@ export default function Main() {
   const makeRequest = React.useCallback(
     debounce(() => {
       return SetCityName();
-    }, 500),
+    }, 300),
     []
   );
   async function FindWeatherInfo() {
+    SetValue(ref.current.value);
     ref.current.value = "";
     dispatch(GetWeather(State));
   }
@@ -37,6 +39,13 @@ export default function Main() {
           <button onClick={FindWeatherInfo}>Find</button>
         </div>
       </div>
+      {Value ? (
+        <div className="WeatherInCity">
+          <h3>Погода в {Value}</h3>
+        </div>
+      ) : (
+        ""
+      )}
       <div className="Weather_Main_ShowWeather" ref={Slider}>
         {State.Weather.map((item) => {
           return <WeatherItem item={item}></WeatherItem>;
@@ -47,7 +56,7 @@ export default function Main() {
           <button
             onClick={() => {
               Slider.current.childNodes.forEach((item) => {
-                item.style = `transform:translateX(-385px)`;
+                item.style = `transform:translateX(-400px)`;
               });
             }}
           >
