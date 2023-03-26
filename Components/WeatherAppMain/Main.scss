@@ -1,68 +1,91 @@
-.Weather_Main{
+.Weather_Main {
+  position: relative;
+  background: #1f202b;
+  height: 85%;
+  input {
+    background-color: #1f202b;
+    width: 65%;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    outline: none;
+    border: 0px;
+  }
+  .Blur {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_Input {
     position: relative;
-    background: #1F202B;
-    height: 85%;
-    input{
-        background-color: #1F202B;
-        width:65%;
-        padding: 20px;
-        color: white;
-        font-size: 20px;
-        border-radius: 40px;
-        outline: none;
-        border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img2.goodfon.ru/original/1920x1200/a/1c/london-city-river-shard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 70%;
+    button {
+      position: absolute;
+      padding: 20px;
+      right: 16.6%;
+      width: 150px;
+      border-radius: 40px;
+      font-weight: 700;
+      background-color: #1a9bd6;
+      border: 0px;
+      color: white;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: #147fb1;
+        cursor: pointer;
+      }
     }
-    .Blur{
-        background: rgba(255, 255, 255, 0.2);
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(6px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  }
+  &_ShowWeather {
+    position: absolute;
+    width: 100%;
+    display: flex;
+
+    overflow: hidden;
+    bottom: 20%;
+    height: 35%;
+    .WeatherFor {
+      color: white;
     }
-    &_Input{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(https://img2.goodfon.ru/original/1920x1200/a/1c/london-city-river-shard.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        width: 100%;
-        height: 70%;
-       button{
-        position: absolute;
-        padding: 20px;
-        right: 16.6%;
-        width: 150px;
-        border-radius: 40px;
-        font-weight:700;
-        background-color: #1A9BD6;
-        border: 0px;
-        color: white;
-        transition: 0.2s ease-in-out;
-        &:hover{
-            background-color: #147fb1;
-            cursor: pointer;
-        }
-       }
+  }
+  .WeatherFor {
+    text-align: center;
+  }
+  .BtnFindWeather {
+    position: absolute;
+    width: 35%;
+    bottom: 5%;
+    height: 10%;
+    left: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      padding: 10px;
+      width: 150px;
+      border-radius: 40px;
+      font-weight: 700;
+      background-color: #1a9bd6;
+      border: 0px;
+      color: white;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: #147fb1;
+        cursor: pointer;
+      }
     }
-    &_ShowWeather{
-      
-        position: absolute;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        overflow: hidden;
-        bottom: 20%;
-        height: 35%;
-       .WeatherFor{
-        color: white;
-       }
-       }
-       .WeatherFor{
-        text-align: center;
-       }
+  }
 }

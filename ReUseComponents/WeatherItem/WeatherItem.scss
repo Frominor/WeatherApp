@@ -1,57 +1,77 @@
-.Weather_Item{
-    color: white;
-    min-width: 240px;
-    transition: .1s ease-in-out;
- &_Header{
+.Weather_Item {
+  color: white;
+  min-width: 320px;
+  transition: 0.1s ease-in-out;
+  margin-left: 30px;
+  transform: translateX(-400px);
+  margin-right: 30px;
+  &_Header {
     text-align: center;
     padding: 5px;
     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
- &_Header{
+    flex-direction: column;
+    justify-content: center;
+  }
+  &_Header {
     border-radius: 10px 10px 0px 0px;
- }
- &_Main{
-min-width: 240px;
-height: 250px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+  }
+  &_Main {
+    min-width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-&_AboutWeather{
-    font-size: 25px;
-    color: lightgray;
-    img{
-        margin-top: 20px;
-        margin-left:85px ;
+    &_AboutWeather {
+      font-size: 25px;
+      color: lightgray;
+      display: flex;
+      align-items: center;
+      height: 50%;
+      width: 100%;
+      justify-content: space-evenly;
+      img {
         width: 35px;
-    }
-    h4{
+      }
+      h4 {
         text-align: center;
+      }
     }
- }  
- &_title{   
+    &_title {
+      display: flex;
+      height: 50%;
+      width: 70%;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 45px;
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  .Header_Black {
+    background-color: #222532;
+  }
+  .Main_Black {
+    background-color: #252935;
+  }
+  .Main_White {
+    background-color: #323544;
+  }
+  .Header_White {
+    background-color: #2c303c;
+  }
+  .rainpercent {
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
+  }
+  .wind {
+    width: 40%;
+    display: flex;
     align-items: center;
-    font-size: 45px;
-img{
-    width: 70px;
-} 
-} 
- }
- 
- .Header_Black{
-background-color:#222532;;
- }
- .Main_Black{
-background-color: #252935;
- }
- .Main_White{
-    background-color: #323544;
- }
- .Header_White{
-    background-color: #2C303C;
- }
+    justify-content: space-evenly;
+  }
 }

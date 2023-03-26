@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.scss';
 import Header from './Components/WeatherAppHeader/Header';
 import Main from './Components/WeatherAppMain/Main';
