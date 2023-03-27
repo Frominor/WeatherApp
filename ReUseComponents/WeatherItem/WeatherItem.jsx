@@ -24,7 +24,7 @@ export default function WeatherItem({ item }) {
       break;
   }
   return (
-    <div className="Weather_Item">
+    <div className="Weather_Item ">
       <div
         className={
           item.Color

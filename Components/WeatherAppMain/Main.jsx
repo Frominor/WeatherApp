@@ -15,6 +15,8 @@ export default function Main() {
     const City = ref.current.value;
     dispatch(GetYuorCoord(City));
   };
+  React.useEffect(()=>{
+  },[])
   const makeRequest = React.useCallback(
     debounce(() => {
       return SetCityName();
@@ -41,7 +43,7 @@ export default function Main() {
       </div>
       {Value ? (
         <div className="WeatherInCity">
-          <h3>Погода в {Value}</h3>
+          <h3>Погода в г.{Value}</h3>
         </div>
       ) : (
         ""
